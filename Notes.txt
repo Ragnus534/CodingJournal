@@ -1,0 +1,3 @@
+Containers  Journals  Notes
+
+Conatiner also can contain note on right, clicking on jounral will change content on note on left
