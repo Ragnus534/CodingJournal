@@ -5,6 +5,7 @@ namespace CodingJournal.API.Data
 {
     public class DataContext : DbContext
     {
+        //test1
         public DataContext(DbContextOptions options) : base(options)
         {
 
