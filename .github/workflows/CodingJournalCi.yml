@@ -23,4 +23,4 @@ jobs:
     - name: Build
       run: dotnet build ./CodingJournal.API.csproj --no-restore
     - name: Test
-      run: dotnet test ./CodingJournal.API.sln --no-build --verbosity normal
+      run: dotnet test  --no-build --verbosity normal
