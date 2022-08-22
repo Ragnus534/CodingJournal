@@ -19,8 +19,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./CodingJournal.API.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ./CodingJournal.API.csproj --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./CodingJournal.API.sln --no-build --verbosity normal
