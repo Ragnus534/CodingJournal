@@ -11,7 +11,7 @@ builder.Services.AddCors(options =>
     // this defines a CORS policy called "default"
     options.AddPolicy("default", policy =>
     {
-        policy.WithOrigins("http://localhost:4200")
+        policy.WithOrigins("https://localhost:4200")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
