@@ -1,4 +1,4 @@
-﻿using CodingJournal.API.Models;
+﻿using CodingJournal.API.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CodingJournal.API.Data
