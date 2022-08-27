@@ -9,7 +9,7 @@ namespace CodingJournal.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
+    
     public class UsersController : BaseApiController
     {
         private readonly DataContext _dataContext;
@@ -26,6 +26,7 @@ namespace CodingJournal.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
             return await _dataContext.Users.FindAsync(id);

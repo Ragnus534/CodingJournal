@@ -47,7 +47,7 @@
             };
         }
 
-        [HttpPost]
+        [HttpPost("login")]
         public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
         {
             var user = await _context.Users.SingleOrDefaultAsync(
